@@ -13,14 +13,20 @@ private:
     int size;
 
 public:
+    // matrix constructors
     FullMatrix();
     FullMatrix(int N);
+
+    // insert element v at position (i,j) in matrix
     void add_Element(int i, int j, double v);
 
+    // get values of matrix
     double get_Values(int i, int j);
 
+    // print matrix values to screen
     void display();
 
+    // matrix vector product
     std::vector<double> mat_Vec_Prod(std::vector<double> &x);
 
     // matrix matrix product
