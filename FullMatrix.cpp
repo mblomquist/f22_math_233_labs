@@ -38,6 +38,7 @@ void FullMatrix::display() {
         }
         std::cout << std::endl;
     }
+    std::cout << std::endl;
 }
 
 double FullMatrix::get_Values(int i, int j) {

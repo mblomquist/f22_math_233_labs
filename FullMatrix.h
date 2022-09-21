@@ -22,6 +22,16 @@ public:
     void display();
 
     std::vector<double> mat_Vec_Prod(std::vector<double> &x);
+
+    // matrix matrix product
+    void mat_Mat_Prod(FullMatrix &B, FullMatrix &AB);
+
+    // get size of a matrix
+    inline int get_Size(){ return size;};
+
+
+    std::vector<double> inverse_U(std::vector<double> &b);
+
 };
 
 
