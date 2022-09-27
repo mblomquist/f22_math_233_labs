@@ -51,19 +51,31 @@ build cmake_object_order_depends_target_lab01: phony || CMakeFiles/lab01.dir
 
 build CMakeFiles/lab01.dir/main_lab02.cpp.o: CXX_COMPILER__lab01_Debug /Users/mblomquist/CLionProjects/lab01/main_lab02.cpp || cmake_object_order_depends_target_lab01
   DEP_FILE = CMakeFiles/lab01.dir/main_lab02.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
   OBJECT_DIR = CMakeFiles/lab01.dir
   OBJECT_FILE_DIR = CMakeFiles/lab01.dir
 
 build CMakeFiles/lab01.dir/Grid2d.cpp.o: CXX_COMPILER__lab01_Debug /Users/mblomquist/CLionProjects/lab01/Grid2d.cpp || cmake_object_order_depends_target_lab01
   DEP_FILE = CMakeFiles/lab01.dir/Grid2d.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
   OBJECT_DIR = CMakeFiles/lab01.dir
   OBJECT_FILE_DIR = CMakeFiles/lab01.dir
 
 build CMakeFiles/lab01.dir/FullMatrix.cpp.o: CXX_COMPILER__lab01_Debug /Users/mblomquist/CLionProjects/lab01/FullMatrix.cpp || cmake_object_order_depends_target_lab01
   DEP_FILE = CMakeFiles/lab01.dir/FullMatrix.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/lab01.dir
+  OBJECT_FILE_DIR = CMakeFiles/lab01.dir
+
+build CMakeFiles/lab01.dir/main_lab03.cpp.o: CXX_COMPILER__lab01_Debug /Users/mblomquist/CLionProjects/lab01/main_lab03.cpp || cmake_object_order_depends_target_lab01
+  DEP_FILE = CMakeFiles/lab01.dir/main_lab03.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/lab01.dir
+  OBJECT_FILE_DIR = CMakeFiles/lab01.dir
+
+build CMakeFiles/lab01.dir/math_tools.cpp.o: CXX_COMPILER__lab01_Debug /Users/mblomquist/CLionProjects/lab01/math_tools.cpp || cmake_object_order_depends_target_lab01
+  DEP_FILE = CMakeFiles/lab01.dir/math_tools.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
   OBJECT_DIR = CMakeFiles/lab01.dir
   OBJECT_FILE_DIR = CMakeFiles/lab01.dir
 
@@ -75,8 +87,8 @@ build CMakeFiles/lab01.dir/FullMatrix.cpp.o: CXX_COMPILER__lab01_Debug /Users/mb
 #############################################
 # Link the executable lab01
 
-build lab01: CXX_EXECUTABLE_LINKER__lab01_Debug CMakeFiles/lab01.dir/main_lab02.cpp.o CMakeFiles/lab01.dir/Grid2d.cpp.o CMakeFiles/lab01.dir/FullMatrix.cpp.o
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+build lab01: CXX_EXECUTABLE_LINKER__lab01_Debug CMakeFiles/lab01.dir/main_lab02.cpp.o CMakeFiles/lab01.dir/Grid2d.cpp.o CMakeFiles/lab01.dir/FullMatrix.cpp.o CMakeFiles/lab01.dir/main_lab03.cpp.o CMakeFiles/lab01.dir/math_tools.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6
   OBJECT_DIR = CMakeFiles/lab01.dir
   POST_BUILD = :
   PRE_LINK = :

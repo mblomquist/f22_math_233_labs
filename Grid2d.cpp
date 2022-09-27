@@ -27,6 +27,22 @@ double Grid2d::get_dy() {
     return dy;
 }
 
+double Grid2d::get_xmin() {
+    return xmin;
+}
+
+double Grid2d::get_xmax() {
+    return xmax;
+}
+
+double Grid2d::get_ymin() {
+    return ymin;
+}
+
+double Grid2d::get_ymax() {
+    return ymax;
+}
+
 long Grid2d::n_from_ij(long i, long j) {
     return N * j + i;
 }

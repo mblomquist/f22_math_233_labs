@@ -23,6 +23,12 @@ public:
     double get_dx();    // return dx to user
     double get_dy();    // return dy to user
 
+
+    double get_xmin();
+    double get_ymin();
+    double get_xmax();
+    double get_ymax();
+
     // Constructor to create object
     Grid2d();
     // Constructor to initialize values
