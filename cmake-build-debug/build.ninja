@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: lab01
+# Project: f22_math_233_labs
 # Configurations: Debug
 # =============================================================================
 
@@ -41,59 +41,59 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/mblomquist/CLionProjects/lab01/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target lab01
+# Object build statements for EXECUTABLE target f22_math_233_labs
 
 
 #############################################
-# Order-only phony target for lab01
+# Order-only phony target for f22_math_233_labs
 
-build cmake_object_order_depends_target_lab01: phony || CMakeFiles/lab01.dir
+build cmake_object_order_depends_target_f22_math_233_labs: phony || CMakeFiles/f22_math_233_labs.dir
 
-build CMakeFiles/lab01.dir/main_lab02.cpp.o: CXX_COMPILER__lab01_Debug /Users/mblomquist/CLionProjects/lab01/main_lab02.cpp || cmake_object_order_depends_target_lab01
-  DEP_FILE = CMakeFiles/lab01.dir/main_lab02.cpp.o.d
+build CMakeFiles/f22_math_233_labs.dir/Grid2d.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/Grid2d.cpp || cmake_object_order_depends_target_f22_math_233_labs
+  DEP_FILE = CMakeFiles/f22_math_233_labs.dir/Grid2d.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/lab01.dir
-  OBJECT_FILE_DIR = CMakeFiles/lab01.dir
+  OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
+  OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
 
-build CMakeFiles/lab01.dir/Grid2d.cpp.o: CXX_COMPILER__lab01_Debug /Users/mblomquist/CLionProjects/lab01/Grid2d.cpp || cmake_object_order_depends_target_lab01
-  DEP_FILE = CMakeFiles/lab01.dir/Grid2d.cpp.o.d
+build CMakeFiles/f22_math_233_labs.dir/FullMatrix.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/FullMatrix.cpp || cmake_object_order_depends_target_f22_math_233_labs
+  DEP_FILE = CMakeFiles/f22_math_233_labs.dir/FullMatrix.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/lab01.dir
-  OBJECT_FILE_DIR = CMakeFiles/lab01.dir
+  OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
+  OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
 
-build CMakeFiles/lab01.dir/FullMatrix.cpp.o: CXX_COMPILER__lab01_Debug /Users/mblomquist/CLionProjects/lab01/FullMatrix.cpp || cmake_object_order_depends_target_lab01
-  DEP_FILE = CMakeFiles/lab01.dir/FullMatrix.cpp.o.d
+build CMakeFiles/f22_math_233_labs.dir/main_lab03.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/main_lab03.cpp || cmake_object_order_depends_target_f22_math_233_labs
+  DEP_FILE = CMakeFiles/f22_math_233_labs.dir/main_lab03.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/lab01.dir
-  OBJECT_FILE_DIR = CMakeFiles/lab01.dir
+  OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
+  OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
 
-build CMakeFiles/lab01.dir/main_lab03.cpp.o: CXX_COMPILER__lab01_Debug /Users/mblomquist/CLionProjects/lab01/main_lab03.cpp || cmake_object_order_depends_target_lab01
-  DEP_FILE = CMakeFiles/lab01.dir/main_lab03.cpp.o.d
+build CMakeFiles/f22_math_233_labs.dir/math_tools.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/math_tools.cpp || cmake_object_order_depends_target_f22_math_233_labs
+  DEP_FILE = CMakeFiles/f22_math_233_labs.dir/math_tools.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/lab01.dir
-  OBJECT_FILE_DIR = CMakeFiles/lab01.dir
+  OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
+  OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
 
-build CMakeFiles/lab01.dir/math_tools.cpp.o: CXX_COMPILER__lab01_Debug /Users/mblomquist/CLionProjects/lab01/math_tools.cpp || cmake_object_order_depends_target_lab01
-  DEP_FILE = CMakeFiles/lab01.dir/math_tools.cpp.o.d
+build CMakeFiles/f22_math_233_labs.dir/SL_method.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/SL_method.cpp || cmake_object_order_depends_target_f22_math_233_labs
+  DEP_FILE = CMakeFiles/f22_math_233_labs.dir/SL_method.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/lab01.dir
-  OBJECT_FILE_DIR = CMakeFiles/lab01.dir
+  OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
+  OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target lab01
+# Link build statements for EXECUTABLE target f22_math_233_labs
 
 
 #############################################
-# Link the executable lab01
+# Link the executable f22_math_233_labs
 
-build lab01: CXX_EXECUTABLE_LINKER__lab01_Debug CMakeFiles/lab01.dir/main_lab02.cpp.o CMakeFiles/lab01.dir/Grid2d.cpp.o CMakeFiles/lab01.dir/FullMatrix.cpp.o CMakeFiles/lab01.dir/main_lab03.cpp.o CMakeFiles/lab01.dir/math_tools.cpp.o
+build f22_math_233_labs: CXX_EXECUTABLE_LINKER__f22_math_233_labs_Debug CMakeFiles/f22_math_233_labs.dir/Grid2d.cpp.o CMakeFiles/f22_math_233_labs.dir/FullMatrix.cpp.o CMakeFiles/f22_math_233_labs.dir/main_lab03.cpp.o CMakeFiles/f22_math_233_labs.dir/math_tools.cpp.o CMakeFiles/f22_math_233_labs.dir/SL_method.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6
-  OBJECT_DIR = CMakeFiles/lab01.dir
+  OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = lab01
-  TARGET_PDB = lab01.dbg
+  TARGET_FILE = f22_math_233_labs
+  TARGET_PDB = f22_math_233_labs.dbg
 
 
 #############################################
@@ -129,7 +129,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/mblomquist/CLionProjects/lab01/cmake-build-debug
 
-build all: phony lab01
+build all: phony f22_math_233_labs
 
 # =============================================================================
 # Built-in targets

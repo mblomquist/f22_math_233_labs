@@ -26,6 +26,8 @@ double bilinear_interpolation(Grid2d & grid,std::vector<double> & func,double x,
     int i = floor( (x - grid.get_xmin()) / dx);
     int j = floor( (y - grid.get_ymin()) / dy);
 
+    std::cout << "i: " << i << " j: " << j << std::endl;
+
     double x_i = grid.get_xmin() + i * dx;
     double y_j = grid.get_ymin() + j * dy;
     double x_ip1 = x_i + dx;
