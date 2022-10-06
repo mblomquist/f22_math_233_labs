@@ -2,6 +2,10 @@
 // Created by Matt Blomquist on 9/27/22.
 //
 #include <iostream>
+#include "math_tools.h"
+#include "Grid2d.h"
+#include <vector>
+#include <cmath>
 
 int main() {
     std::cout << "Hello, Lab 3!" << std::endl;
