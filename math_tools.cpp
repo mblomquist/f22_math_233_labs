@@ -20,6 +20,8 @@ double bilinear_interpolation(Grid2d & grid,std::vector<double> & func,double x,
     double dx = grid.get_dx();
     double dy = grid.get_dy();
 
+    std::cout <<"dx: " << dx << " dy: " << dy << std::endl;
+
     // get i and j to find which cell C x belongs to
     //  i = floor((x - xmin)/dx)
     //  j = floor((y-ymin)/dx)

@@ -60,7 +60,7 @@ double Grid2d::x_from_n(long n) {
 }
 
 double Grid2d::y_from_n(long n) {
-    return ymax - double(j_from_n(n)) * dy;
+    return ymin + double(j_from_n(n)) * dy;
 }
 
 void Grid2d::print_VTK_format(std::string output_file) {
