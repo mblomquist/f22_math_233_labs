@@ -45,3 +45,17 @@ double bilinear_interpolation(Grid2d & grid,std::vector<double> & func,double x,
 
     return phi;
 }
+
+double MAX(double a, double b){
+    if (a > b)
+        return a;
+    else
+        return b;
+}
+
+int MAX(int a, int b){
+    if (a > b)
+        return a;
+    else
+        return b;
+}

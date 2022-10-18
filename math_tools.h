@@ -11,7 +11,7 @@
 
 double bilinear_interpolation(Grid2d & grid,std::vector<double> & func,double x, double y);
 
-
-
+int MAX(int a, int b);
+double MAX(double a, double b);
 
 #endif //LAB01_MATH_TOOLS_H

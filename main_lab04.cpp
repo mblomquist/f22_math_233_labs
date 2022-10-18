@@ -3,6 +3,9 @@
 //
 
 #include <iostream>
+
+#include "Matrix.h"
+
 int main() {
     std::cout << "Hello, MATH233 Lab 04" << std::endl;
 

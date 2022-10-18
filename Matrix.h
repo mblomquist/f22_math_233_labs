@@ -19,7 +19,7 @@ public:
 };
 
 // Child Class for Matrix
-class SparseMatrix_CRS:Matrix{
+class SparseMatrix_CRS : public Matrix{
 
 private:
     std::vector <double> values;
@@ -29,7 +29,10 @@ private:
 public:
     SparseMatrix_CRS();
     void add_element(int i, int j, double val);
-    double get_element(int i, int j);
+    double get_element(int i, int j) const;
+    void mat_Vec_Product( const std::vector<double> &x, std::vector<double> &Ax )const;
+    void print();
+    void print_As_Full();
 };
 
 #endif //F22_MATH_233_LABS_MATRIX_H
