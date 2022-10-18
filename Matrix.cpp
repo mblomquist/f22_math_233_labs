@@ -42,7 +42,7 @@ void SparseMatrix_CRS::add_element(int i, int j, double val) {
 
 double SparseMatrix_CRS::get_element(int i, int j) const {
 
-    if (i >= index.size())
+    if (i > index.size())
         return 0.0;
 
     int start = i == 0 ? 0 : index[i-1];
@@ -82,9 +82,13 @@ void SparseMatrix_CRS::print_As_Full(){
 
     int r_max = index.size() > 0 ? index.size() - 1 : 0;
 
-    for (int r=0; r<r_max+4; r++)
+    std::cout << c_max << std::endl;
+
+    for (int r=0; r<=r_max; r++)
     {
-        for (int c=0; c<c_max; c++)
+        std::cout << r << std::endl;
+
+        for (int c=0; c<=c_max; c++)
             std::cout << get_element(r,c) << ", ";
         std::cout << std::endl;
     }
