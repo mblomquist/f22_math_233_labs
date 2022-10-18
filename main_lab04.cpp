@@ -14,8 +14,15 @@ int main() {
     A.add_element(0, 1, 25.);
     A.add_element(2, 2, 30.);
     A.add_element(2, 3, 30.);
+    A.add_element(2, 3, 30.);
+    A.add_element(2, 2, 30.);
+
     A.print();
+    std::cout << "Print A in full:" << std::endl;
     A.print_As_Full();
+
+    std::vector<double> x;
+    x.assign(2,0.);
 
 
 
