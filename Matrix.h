@@ -8,11 +8,13 @@
 #include <vector>
 
 class Matrix {
-
+private:
 public:
+    Matrix(){};
     virtual void mat_Vec_Product( const std::vector<double> &x, std::vector<double> &Ax ) const =0;
-    virtual void add_element(int i, int j,double v ) const =0;
-    virtual double get_element(int i, int j ) const =0;
+    virtual void add_element(int i, int j,double v ) {  };
+    virtual double get_element(int i, int j ) const = 0;
+    virtual ~Matrix(){};
 
 
 

@@ -6,7 +6,9 @@
 #include <iostream>
 #include "math_tools.h"
 
-
+//Matrix::Matrix(){
+//
+//};
 SparseMatrix_CRS::SparseMatrix_CRS(){
 
     values.assign(0, 0.);

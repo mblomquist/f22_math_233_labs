@@ -8,6 +8,17 @@
 
 int main() {
     std::cout << "Hello, MATH233 Lab 04" << std::endl;
+    // declare sparse matrix
+    SparseMatrix_CRS A;
+    // add values to A
+    A.add_element(0, 1, 25.);
+    A.add_element(2, 2, 30.);
+    A.add_element(2, 3, 30.);
+    A.print();
+    A.print_As_Full();
+
+
+
 
     return 0;
 }
