@@ -20,7 +20,8 @@ SparseMatrix_CRS::SparseMatrix_CRS() {
 // add element to sparse matrix
 void SparseMatrix_CRS::add_element(int i, int j, double val) {
 
-    int r_max = index.size() > 0 ? index.size() - 1 : 0;
+    int r_max = index.size();//> 0 ? index.size() - 1 : 0;
+    int position = find_position(i, j);
 
     // for existing elements, add the new value to existing value
     if (position != -1) {
@@ -42,8 +43,9 @@ void SparseMatrix_CRS::add_element(int i, int j, double val) {
                 index.push_back(columns.size());
             }
 
-        values.push_back(val);
-        columns.push_back(j);
+            values.push_back(val);
+            columns.push_back(j);
+        }
     }
 
 }
@@ -106,4 +108,25 @@ void SparseMatrix_CRS::print_As_Full() {
         std::cout << std::endl;
     }
 
+}
+
+
+// find the position of element A_(i,j) in the lists vals and cols
+int SparseMatrix_CRS::find_position(int i, int j) const {
+    // position doesn't already exist in index list
+    if (i > index.size())
+        return -1;
+
+    int start = i == 0 ? 0 : index[i - 1];
+    int end = i == index.size() ? columns.size() : index[i];
+
+    for (int k = start; k < end; k++)
+        if (columns[k] == j)
+            return k;
+
+    return -1;
+}
+
+int SparseMatrix_CRS::get_num_rows() const{
+    return index.size()+1;
 }

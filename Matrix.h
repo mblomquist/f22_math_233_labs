@@ -35,6 +35,8 @@ public:
     void mat_Vec_Product( const std::vector<double> &x, std::vector<double> &Ax )const;
     void print();
     void print_As_Full();
+    int find_position(int i, int j) const;
+    int get_num_rows() const;
 };
 
 #endif //F22_MATH_233_LABS_MATRIX_H
