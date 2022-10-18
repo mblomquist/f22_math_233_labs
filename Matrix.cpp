@@ -14,7 +14,7 @@ SparseMatrix_CRS::SparseMatrix_CRS(){
     index.assign(0,0);
 
 };
-
+// add element to sparse matrix
 void SparseMatrix_CRS::add_element(int i, int j, double val) {
 
     int r_max = index.size() > 0 ? index.size() - 1 : 0;
