@@ -61,7 +61,18 @@ double SparseMatrix_CRS::get_element(int i, int j) const {
 
 
 void SparseMatrix_CRS::mat_Vec_Product(const std::vector<double> &x, std::vector<double> &Ax) const {
+    int num_row = get_num_rows();
+    Ax.assign(num_row,0.0);
 
+    for (int r = 0; r < num_row; r++) {
+
+        int start = r == 0 ? 0 : index[r - 1];
+        int end = r == index.size() ? columns.size() : index[r];
+
+        for (int pos = start; pos < end; pos++) {
+            Ax[r] += values[pos] * x[columns[pos]];
+        }
+    }
 }
 
 void SparseMatrix_CRS::print() {
