@@ -51,37 +51,49 @@ build cmake_object_order_depends_target_f22_math_233_labs: phony || CMakeFiles/f
 
 build CMakeFiles/f22_math_233_labs.dir/Grid2d.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/Grid2d.cpp || cmake_object_order_depends_target_f22_math_233_labs
   DEP_FILE = CMakeFiles/f22_math_233_labs.dir/Grid2d.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
   OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
   OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
 
 build CMakeFiles/f22_math_233_labs.dir/FullMatrix.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/FullMatrix.cpp || cmake_object_order_depends_target_f22_math_233_labs
   DEP_FILE = CMakeFiles/f22_math_233_labs.dir/FullMatrix.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
   OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
   OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
 
 build CMakeFiles/f22_math_233_labs.dir/math_tools.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/math_tools.cpp || cmake_object_order_depends_target_f22_math_233_labs
   DEP_FILE = CMakeFiles/f22_math_233_labs.dir/math_tools.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
   OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
   OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
 
 build CMakeFiles/f22_math_233_labs.dir/SL_method.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/SL_method.cpp || cmake_object_order_depends_target_f22_math_233_labs
   DEP_FILE = CMakeFiles/f22_math_233_labs.dir/SL_method.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
-  OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
-
-build CMakeFiles/f22_math_233_labs.dir/main_lab04.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/main_lab04.cpp || cmake_object_order_depends_target_f22_math_233_labs
-  DEP_FILE = CMakeFiles/f22_math_233_labs.dir/main_lab04.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
   OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
   OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
 
 build CMakeFiles/f22_math_233_labs.dir/Matrix.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/Matrix.cpp || cmake_object_order_depends_target_f22_math_233_labs
   DEP_FILE = CMakeFiles/f22_math_233_labs.dir/Matrix.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=gnu++14
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
+  OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
+
+build CMakeFiles/f22_math_233_labs.dir/main_lab05.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/main_lab05.cpp || cmake_object_order_depends_target_f22_math_233_labs
+  DEP_FILE = CMakeFiles/f22_math_233_labs.dir/main_lab05.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
+  OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
+
+build CMakeFiles/f22_math_233_labs.dir/FVsolver.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/FVsolver.cpp || cmake_object_order_depends_target_f22_math_233_labs
+  DEP_FILE = CMakeFiles/f22_math_233_labs.dir/FVsolver.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
+  OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
+
+build CMakeFiles/f22_math_233_labs.dir/cf2.cpp.o: CXX_COMPILER__f22_math_233_labs_Debug /Users/mblomquist/CLionProjects/lab01/cf2.cpp || cmake_object_order_depends_target_f22_math_233_labs
+  DEP_FILE = CMakeFiles/f22_math_233_labs.dir/cf2.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
   OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
   OBJECT_FILE_DIR = CMakeFiles/f22_math_233_labs.dir
 
@@ -93,8 +105,8 @@ build CMakeFiles/f22_math_233_labs.dir/Matrix.cpp.o: CXX_COMPILER__f22_math_233_
 #############################################
 # Link the executable f22_math_233_labs
 
-build f22_math_233_labs: CXX_EXECUTABLE_LINKER__f22_math_233_labs_Debug CMakeFiles/f22_math_233_labs.dir/Grid2d.cpp.o CMakeFiles/f22_math_233_labs.dir/FullMatrix.cpp.o CMakeFiles/f22_math_233_labs.dir/math_tools.cpp.o CMakeFiles/f22_math_233_labs.dir/SL_method.cpp.o CMakeFiles/f22_math_233_labs.dir/main_lab04.cpp.o CMakeFiles/f22_math_233_labs.dir/Matrix.cpp.o
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6
+build f22_math_233_labs: CXX_EXECUTABLE_LINKER__f22_math_233_labs_Debug CMakeFiles/f22_math_233_labs.dir/Grid2d.cpp.o CMakeFiles/f22_math_233_labs.dir/FullMatrix.cpp.o CMakeFiles/f22_math_233_labs.dir/math_tools.cpp.o CMakeFiles/f22_math_233_labs.dir/SL_method.cpp.o CMakeFiles/f22_math_233_labs.dir/Matrix.cpp.o CMakeFiles/f22_math_233_labs.dir/main_lab05.cpp.o CMakeFiles/f22_math_233_labs.dir/FVsolver.cpp.o CMakeFiles/f22_math_233_labs.dir/cf2.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/f22_math_233_labs.dir
   POST_BUILD = :
   PRE_LINK = :
