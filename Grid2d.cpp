@@ -63,6 +63,10 @@ double Grid2d::y_from_n(long n) {
     return ymin + double(j_from_n(n)) * dy;
 }
 
+double Grid2d::get_nb_of_nodes() {
+    return (N * M) - 1;
+}
+
 void Grid2d::print_VTK_format(std::string output_file) {
     long num_of_leaf_cells;
     long node_of_cell[4];

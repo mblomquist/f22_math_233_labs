@@ -23,11 +23,13 @@ public:
     double get_dx();    // return dx to user
     double get_dy();    // return dy to user
 
-
     double get_xmin();
     double get_ymin();
     double get_xmax();
     double get_ymax();
+
+    double get_M(){return M;};
+    double get_N(){return N;};
 
     // Constructor to create object
     Grid2d();
@@ -42,10 +44,14 @@ public:
     double x_from_n(long n);
     double y_from_n(long n);
 
+    double get_nb_of_nodes();
+
     // output file in VTK format
     void print_VTK_format(std::string output_file);
     void print_VTK_format(std::vector<double> &F, std::string data_name,
             std::string file_name);
+
+
 };
 
 
