@@ -13,7 +13,8 @@ class FVsolver {
 private :
     double alpha;
     double mu;
-    std::vector<double> solution, rhs;
+    double integrate_over_interface(double phi00, double phi10, double phi01, double phi11, double dx, double dy);
+    std::vector<double>  rhs;
     SparseMatrix_CRS matrix;
     Grid2d grid;
     cf2 *levelset;
@@ -29,6 +30,11 @@ public :
     void set_level_set(cf2 & new_ls){levelset = &new_ls;};
     void set_forcing_term(cf2 & new_forcing_term) {forcing_term = &new_forcing_term;};
     void set_boundary_term(cf2 & new_boundary_term){boundary_term = &new_boundary_term;};
+    void solve(std::vector<double> &solution);
+
+    double compute_length(double delta, double phi1, double phi2);
+
+    double compute_area(double phi00, double phi10, double phi01, double phi11, double dx, double dy);
 };
 
 
