@@ -64,7 +64,7 @@ double Grid2d::y_from_n(long n) {
 }
 
 double Grid2d::get_nb_of_nodes() {
-    return (N * M) - 1;
+    return N * M;
 }
 
 void Grid2d::print_VTK_format(std::string output_file) {
