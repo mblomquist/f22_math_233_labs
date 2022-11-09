@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "Grid2d.h"
+#include "../lib/Grid2d.h"
 
 // using namespace std;  < -- Streamline?
 

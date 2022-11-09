@@ -77,6 +77,22 @@ void SparseMatrix_CRS::mat_Vec_Product(const std::vector<double> &x, std::vector
     }
 }
 
+void SparseMatrix_CRS::residual(const std::vector<double> &x, const std::vector<double> &b,
+                                std::vector<double> &residual) const {
+    int num_row = get_num_rows();
+    residual.assign(num_row, 0.0);
+
+    for (int r = 0; r < num_row; r++) {
+        residual[r] = b[r];
+        int start = r == 0 ? 0 : index[r - 1];
+        int end = r == index.size() ? columns.size() : index[r];
+
+        for (int pos = start; pos < end; pos++) {
+            residual[r] -= values[pos] * x[columns[pos]];
+        }
+    }
+}
+
 void SparseMatrix_CRS::print() {
     std::cout << "values " << std::endl;
     for (int i = 0; i < values.size(); i++)
@@ -127,6 +143,6 @@ int SparseMatrix_CRS::find_position(int i, int j) const {
     return -1;
 }
 
-int SparseMatrix_CRS::get_num_rows() const{
-    return index.size()+1;
+int SparseMatrix_CRS::get_num_rows() const {
+    return index.size() + 1;
 }

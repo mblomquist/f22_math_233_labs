@@ -2,8 +2,8 @@
 // Created by Matt Blomquist on 9/27/22.
 //
 #include <iostream>
-#include "math_tools.h"
-#include "Grid2d.h"
+#include "../lib/math_tools.h"
+#include "../lib/Grid2d.h"
 #include <vector>
 #include <cmath>
 

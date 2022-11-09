@@ -46,6 +46,20 @@ double bilinear_interpolation(Grid2d & grid,std::vector<double> & func,double x,
     return phi;
 }
 
+// dot product between the vector x and y
+double dot(std::vector<double>  & x, std::vector<double>  & y){
+
+    if (x.size() != y.size())
+        throw std::invalid_argument("Vectors are not the same size");
+
+    double xy = 0.;
+#pragma omp  parallel for reduction(+ : xy)
+    for (int i = 0; i < x.size(); i++)
+        xy += x[i] * y[i];
+
+    return xy;
+}
+
 double MAX(double a, double b){
     if (a > b)
         return a;

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-#include "Grid2d.h"
-#include "FullMatrix.h"
+#include "../lib/Grid2d.h"
+#include "../lib/FullMatrix.h"
 
 
 
