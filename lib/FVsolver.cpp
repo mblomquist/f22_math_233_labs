@@ -3,6 +3,7 @@
 //
 
 #include "FVsolver.h"
+#include "Solvers.h"
 #include "math.h"
 
 void FVsolver::solve(std::vector<double> &solution) {

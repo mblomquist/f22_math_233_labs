@@ -64,8 +64,8 @@ double SparseMatrix_CRS::get_element(int i, int j) const {
 
 void SparseMatrix_CRS::mat_Vec_Product(const std::vector<double> &x, std::vector<double> &Ax) const {
     int num_row = get_num_rows();
-    Ax.assign(num_row,0.0);
-
+    Ax.assign(num_row, 0.0);
+#pragma omp  parallel for
     for (int r = 0; r < num_row; r++) {
 
         int start = r == 0 ? 0 : index[r - 1];

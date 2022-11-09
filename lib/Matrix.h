@@ -12,6 +12,7 @@ private:
 public:
     Matrix(){};
     virtual void mat_Vec_Product( const std::vector<double> &x, std::vector<double> &Ax ) const =0;
+    virtual void residual( const std::vector<double> &x, const std::vector<double> &b, std::vector<double> &residual) const =0;
     virtual void add_element(int i, int j,double v ) {  };
     virtual double get_element(int i, int j ) const = 0;
     virtual ~Matrix(){};
@@ -33,6 +34,7 @@ public:
     void add_element(int i, int j, double val);
     double get_element(int i, int j) const;
     void mat_Vec_Product( const std::vector<double> &x, std::vector<double> &Ax )const;
+    void residual( const std::vector<double> &x, const std::vector<double> &B, std::vector<double> &residual ) const;
     void print();
     void print_As_Full();
     int find_position(int i, int j) const;
