@@ -13,7 +13,7 @@ void FVsolver::solve(std::vector<double> &solution) {
 
     // initialize right-hand side
     rhs.assign(grid.get_nb_of_nodes(), 0.);
-    for (int n = 0; n <= grid.get_nb_of_nodes(); n++) {
+    for (int n = 0; n < grid.get_nb_of_nodes(); n++) {
         // start building the discretization at the node n
         // for edge cases, subtract half a cell
         double xmin = grid.i_from_n(n) == 0 ? grid.x_from_n(n) : grid.x_from_n(n) - dx / 2.;
@@ -83,7 +83,6 @@ void FVsolver::solve(std::vector<double> &solution) {
                                                                                                 (xmax - xmin),
                                                                                                 (ymax - ymin));
     }
-
     CG my_solver;
     std::cout << "Print Matrix:" << std::endl;
     matrix.print_As_Full();
