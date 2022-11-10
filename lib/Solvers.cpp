@@ -43,8 +43,8 @@ void CG::solve(SparseMatrix_CRS &A, std::vector<double> &rhs, std::vector<double
         }
 
         error = rr_new/( solution.size()*solution.size());
-
-//        std::cout << "CG  itr= " << itr << " res = " << error << std::endl;
+    if(itr%10 == 0)
+        std::cout << "CG  itr= " << itr << " res = " << error << std::endl;
         itr += 1;
     }
 

@@ -39,7 +39,7 @@ int main() {
     std::cout << "Hello Lab 6." << std::endl;
     myboundarycondition mybc;
     FVsolver solver;
-    Grid2d grid(4, 4, 0, 3, 0, 3);
+    Grid2d grid(3, 3, 0, 2, 0, 2);
     solver.set_Grid(grid);
     solver.set_alpha(1.);
     solver.set_mu(1.);
