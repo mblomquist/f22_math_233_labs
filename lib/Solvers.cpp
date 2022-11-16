@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 // Solve Conjugate Gradient
-void CG::solve(SparseMatrix_CRS &A, std::vector<double> &rhs, std::vector<double> &solution) const {
+void CG::solve(Matrix &A, std::vector<double> &rhs, std::vector<double> &solution) const {
 
 //    check for symmetry
 //    check_symmetry(A, solution);

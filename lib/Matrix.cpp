@@ -146,3 +146,33 @@ int SparseMatrix_CRS::find_position(int i, int j) const {
 int SparseMatrix_CRS::get_num_rows() const {
     return index.size() + 1;
 }
+void GS_precond_CRS::mat_Vec_Product(const std::vector<double> &x, std::vector<double> &Ax) const {
+    std::vector<double> tmp;
+    Amatrix.mat_Vec_Product(x,tmp);
+    Linverse(tmp,Ax);
+}
+
+// Invert L by doing Gauss-Seidel, where L is a lower triangular matrix
+void GS_precond_CRS::Linverse(const std::vector<double> &x, std::vector<double> &Linvx ) const {
+
+    int num_row = Amatrix.get_num_rows();
+    Linvx.assign(num_row, 0.);
+
+    // Loop over all the rows
+    for (int r = 0; r < num_row; r++) {
+
+        int start = r == 0 ? 0 : Amatrix.index[r - 1];
+        int end = r == Amatrix.index.size() ? Amatrix.columns.size() : Amatrix.index[r];
+        Linvx[r] = x[r];
+        double diag = 0.;
+        for (int pos = start; pos < end; pos++) {
+            if (Amatrix.columns[pos] < r)
+                Linvx[r] -= Amatrix.values[pos] * x[Amatrix.columns[pos]];
+            if (Amatrix.columns[pos] == r)
+                diag = Amatrix.values[pos];
+        }
+        // then divide
+        Linvx[r] /= diag;
+    }
+
+}
