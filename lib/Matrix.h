@@ -25,11 +25,11 @@ public:
 class SparseMatrix_CRS : public Matrix{
 
 private:
+public:
+
     std::vector <double> values;
     std::vector <int> columns;
     std::vector <int> index;
-
-public:
     SparseMatrix_CRS();
     void add_element(int i, int j, double val);
     double get_element(int i, int j) const;
@@ -39,6 +39,17 @@ public:
     void print_As_Full();
     int find_position(int i, int j) const;
     int get_num_rows() const;
+};
+
+class GS_precond_CRS : public Matrix{
+
+private :
+    SparseMatrix_CRS Amatrix;
+public:
+    void mat_Vec_Product( const std::vector<double> &x, std::vector<double> &Ax ) const;
+    void set_matrix(SparseMatrix_CRS & A){Amatrix = A;};
+    void Linverse(const std::vector<double> &x, std::vector<double> &Linvx ) const ;
+
 };
 
 #endif //F22_MATH_233_LABS_MATRIX_H

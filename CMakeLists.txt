@@ -4,7 +4,6 @@ project(f22_math_233_labs)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(f22_math_233_labs
-        mains/main_lab06.cpp
         lib/Grid2d.cpp
         lib/Grid2d.h
         lib/FullMatrix.cpp
@@ -20,4 +19,5 @@ add_executable(f22_math_233_labs
         lib/cf2.cpp
         lib/cf2.h
         lib/Solvers.cpp
-        lib/Solvers.h)
+        lib/Solvers.h
+        mains/main_lab08.cpp)

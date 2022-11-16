@@ -13,7 +13,7 @@ class Solvers {
 private:
 
 public:
-    virtual void solve(SparseMatrix_CRS &A, std::vector<double> &rhs, std::vector<double> & solution ) const =0;
+    virtual void solve(Matrix &A, std::vector<double> &rhs, std::vector<double> & solution ) const =0;
 };
 
 // Child Class for CG method
@@ -22,7 +22,7 @@ class CG : public Solvers{
 private:
     void check_symmetry(SparseMatrix_CRS &A, std::vector<double> &solution) const;
 public:
-    void solve(SparseMatrix_CRS &A, std::vector<double> &rhs, std::vector<double> & solution ) const;
+    void solve(Matrix &A, std::vector<double> &rhs, std::vector<double> & solution ) const;
 };
 
 
